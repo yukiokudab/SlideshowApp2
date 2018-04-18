@@ -12,6 +12,14 @@
 		77066580207CF3F900E645EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7706657E207CF3F900E645EE /* Main.storyboard */; };
 		77066582207CF3F900E645EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77066581207CF3F900E645EE /* Assets.xcassets */; };
 		77066585207CF3F900E645EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77066583207CF3F900E645EE /* LaunchScreen.storyboard */; };
+		7719F776207E3DD80060771F /* IMG_4154.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7719F76F207E3DD70060771F /* IMG_4154.jpg */; };
+		7719F777207E3DD80060771F /* IMG_4161.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7719F770207E3DD70060771F /* IMG_4161.jpg */; };
+		7719F778207E3DD80060771F /* IMG_4157.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7719F771207E3DD70060771F /* IMG_4157.jpg */; };
+		7719F779207E3DD80060771F /* IMG_4159.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7719F772207E3DD70060771F /* IMG_4159.jpg */; };
+		7719F77A207E3DD80060771F /* IMG_4156.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7719F773207E3DD80060771F /* IMG_4156.jpg */; };
+		7719F77B207E3DD80060771F /* IMG_4160.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7719F774207E3DD80060771F /* IMG_4160.jpg */; };
+		7719F77C207E3DD80060771F /* IMG_4155.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7719F775207E3DD80060771F /* IMG_4155.jpg */; };
+		77F47EC7207DEEE800911468 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F47EC6207DEEE800911468 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		77066581207CF3F900E645EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77066584207CF3F900E645EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77066586207CF3F900E645EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7719F76F207E3DD70060771F /* IMG_4154.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4154.jpg; sourceTree = "<group>"; };
+		7719F770207E3DD70060771F /* IMG_4161.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4161.jpg; sourceTree = "<group>"; };
+		7719F771207E3DD70060771F /* IMG_4157.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4157.jpg; sourceTree = "<group>"; };
+		7719F772207E3DD70060771F /* IMG_4159.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4159.jpg; sourceTree = "<group>"; };
+		7719F773207E3DD80060771F /* IMG_4156.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4156.jpg; sourceTree = "<group>"; };
+		7719F774207E3DD80060771F /* IMG_4160.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4160.jpg; sourceTree = "<group>"; };
+		7719F775207E3DD80060771F /* IMG_4155.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4155.jpg; sourceTree = "<group>"; };
+		77F47EC6207DEEE800911468 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +73,17 @@
 				7706657A207CF3F900E645EE /* AppDelegate.swift */,
 				7706657C207CF3F900E645EE /* ViewController.swift */,
 				7706657E207CF3F900E645EE /* Main.storyboard */,
+				7719F76F207E3DD70060771F /* IMG_4154.jpg */,
+				7719F775207E3DD80060771F /* IMG_4155.jpg */,
+				7719F773207E3DD80060771F /* IMG_4156.jpg */,
+				7719F771207E3DD70060771F /* IMG_4157.jpg */,
+				7719F772207E3DD70060771F /* IMG_4159.jpg */,
+				7719F774207E3DD80060771F /* IMG_4160.jpg */,
+				7719F770207E3DD70060771F /* IMG_4161.jpg */,
 				77066581207CF3F900E645EE /* Assets.xcassets */,
 				77066583207CF3F900E645EE /* LaunchScreen.storyboard */,
 				77066586207CF3F900E645EE /* Info.plist */,
+				77F47EC6207DEEE800911468 /* ResultViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -122,9 +146,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7719F77C207E3DD80060771F /* IMG_4155.jpg in Resources */,
+				7719F778207E3DD80060771F /* IMG_4157.jpg in Resources */,
+				7719F777207E3DD80060771F /* IMG_4161.jpg in Resources */,
+				7719F779207E3DD80060771F /* IMG_4159.jpg in Resources */,
 				77066585207CF3F900E645EE /* LaunchScreen.storyboard in Resources */,
+				7719F776207E3DD80060771F /* IMG_4154.jpg in Resources */,
 				77066582207CF3F900E645EE /* Assets.xcassets in Resources */,
+				7719F77B207E3DD80060771F /* IMG_4160.jpg in Resources */,
 				77066580207CF3F900E645EE /* Main.storyboard in Resources */,
+				7719F77A207E3DD80060771F /* IMG_4156.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7706657D207CF3F900E645EE /* ViewController.swift in Sources */,
+				77F47EC7207DEEE800911468 /* ResultViewController.swift in Sources */,
 				7706657B207CF3F900E645EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
