@@ -11,9 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     
-   
+    @IBOutlet weak var playpause: UIButton!
+    @IBOutlet weak var forword: UIButton!
+    @IBOutlet weak var rewind: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     
+
     // 一定の間隔で処理を行うためのタイマー
     var timer: Timer!
     var timer_sec: Float = 0
@@ -29,8 +32,7 @@ class ViewController: UIViewController {
         "IMG_4157.jpg",
         "IMG_4159.jpg",
         "IMG_4160.jpg",
-        "IMG_4161.jpg",
-        ]
+        "IMG_4161.jpg"]
     
     /// 表示している画像の番号を元に画像を表示する
     func displayImage() {
@@ -56,8 +58,9 @@ class ViewController: UIViewController {
         
     // Image Viewに読み込んだ画像をセット
     imageView.image = image
+        
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -76,32 +79,26 @@ class ViewController: UIViewController {
         
     // 表示している画像の番号を元に画像を表示する
         displayImage()
-     
     }
     
-    
     @IBAction func rewind(_ sender: Any) {
-    // 表示している画像の番号を1減らす
+        // 表示している画像の番号を1減らす
         dispImageNo -= 1
         
         // 表示している画像の番号を元に画像を表示する
         displayImage()
     }
     
-    
     @IBAction func playpause(_ sender: Any) {
         // ボタンを押すと画像を再生
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(onTimer), userInfo: nil, repeats: true)
-        //再生 -> 停止　ボタン名変更
-         } else {
-        playpause.setTitle("停止", forState: .Normal)
-            
         // 進む・戻るボタン無効化
         rewind.isEnabled = false
-        forword.isEnabled = false/
-    
-        
+        forword.isEnabled = false
+        //再生 -> 停止　ボタン名変更
+        playpause.setTitle("停止", for: .normal)
+         } else {
         // 再度ボタンを押すと一時停止
        self.timer.invalidate()
         // 現在のタイマーを破棄する
@@ -110,10 +107,10 @@ class ViewController: UIViewController {
        //進む・戻るボタン有効化
        rewind.isEnabled = true
        forword.isEnabled = true
-        
-　　　　//停止 -> 再生　ボタン名変更
-     playpause.setTitle("再生", forState: .Normal)
+       //停止 -> 再生　ボタン名変更
+     playpause.setTitle("再生", for: .normal)
     }
+}
     
     @IBAction func forward(_ sender: Any) {
         // 表示している画像の番号を1増やす
@@ -131,22 +128,23 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // segueから遷移先のResultViewControllerを取得する
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
-        
         resultViewController.imageName = imageNameArray[dispImageNo]
         
         if timer != nil {
             self.timer.invalidate()
-            
             // 現在のタイマーを破棄する
             self.timer = nil
-
+            //進む・戻るボタン有効化
+            rewind.isEnabled = true
+            forword.isEnabled = true
+            //停止 -> 再生　ボタン名変更
+            playpause.setTitle("再生", for: .normal)
+        }
 
     }
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
 
-
-
-
+}
 
 
